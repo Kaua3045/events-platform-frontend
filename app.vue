@@ -1,7 +1,10 @@
 <template>
-  <div class="bg-background">
-    <!-- <NuxtRouteAnnouncer /> -->
-    <!-- <NuxtWelcome /> -->
-    <h1 class="text-primary">HELLO</h1>
-  </div>
+  <Toaster position="top-right" />
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
+
+<script setup>
+import { Toaster } from "vue-sonner";
+</script>
